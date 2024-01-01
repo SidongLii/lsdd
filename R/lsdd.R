@@ -90,7 +90,7 @@ lsdd <- function(data,alpha=0.05,method="more"){
     data%>% aov(value~type,data=.) %>%
       LSD.test("type",group = T,console = T,alpha = alpha) %>% .$groups %>% mutate(value=NULL)->e1
     e1$type <- row.names(e1)
-    data %<>% group_by(type) %>% summarise(mean=mean(value),sd=sd(value)) %>% as.data.frame()
+    data %<>% group_by(type) %>% summarise(mean=mean(value,na.rm = T),sd=sd(value,na.rm=T)) %>% as.data.frame()
     data<- merge(data,e1,by = "type")
     return(list("data"=data))
   }
