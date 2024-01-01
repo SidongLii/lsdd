@@ -1,0 +1,20 @@
+Package: lsdd
+Title: Get significance,mean and sd without exception value
+Version: 0.0.1.0000
+Authors@R: 
+    person("Lee", "Last", , "2875620735@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Exception value will be deleted with triple standard deviation method.
+             Besides,a new data without outlier,which is available,for calculating 
+             to get significance(by LSD method,P<0.05),mean and sd.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    agricolae,
+    magrittr
+Depends: 
+    R (>= 2.10),
+    tidyverse
+LazyData: true
