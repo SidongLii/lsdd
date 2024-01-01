@@ -2,4 +2,6 @@
 
 export(lsdd)
 import(agricolae)
+import(dplyr)
 import(magrittr)
+importFrom(tidyr,spread)
