@@ -7,6 +7,8 @@
 #' @export lsdd
 #' @import agricolae
 #' @import magrittr
+#' @import dplyr
+#' @importFrom tidyr spread
 #' @author Sidong-Li <2875620735@qq.com>
 #' @examples lsdd(data=yourdata)
 lsdd <- function(data,alpha=0.05,method="more"){

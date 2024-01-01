@@ -13,8 +13,9 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
     agricolae,
-    magrittr
+    magrittr,
+    dplyr,
+    tidyr
 Depends: 
-    R (>= 2.10),
-    tidyverse
+    R (>= 2.10)
 LazyData: true
